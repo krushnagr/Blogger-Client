@@ -32,7 +32,7 @@ export default function BlogCart({
   }
   const handleDelete = async() =>{
     try {
-      const { data } = await axios.delete(`/api/v1/blog/detele-blog/${id}`);
+      const { data } = await axios.delete(`https://jealous-newt-tank-top.cyclic.app/api/v1/blog/detele-blog/${id}`);
       if (data?.success) {
         toast.success("Blog Deleted");
         window.location.reload();

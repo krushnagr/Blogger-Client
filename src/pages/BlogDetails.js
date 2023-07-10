@@ -12,7 +12,7 @@ const BlogDetails = () => {
     const navigate = useNavigate();
     const getBlogDetails = async() =>{
         try{
-            const {data} = await axios.get(`/api/v1/blog/get-blog/${id}`);
+            const {data} = await axios.get(`https://jealous-newt-tank-top.cyclic.app/api/v1/blog/get-blog/${id}`);
             if (data?.success) {
                 setBlog(data?.blog);
                 console.log(data.blog);

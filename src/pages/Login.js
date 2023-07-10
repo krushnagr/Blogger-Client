@@ -25,7 +25,7 @@ const Login = () => {
   const handelSbmit = async (e)=>{
     e.preventDefault();
     try{
-      const {data} = await axios.post("http://localhost:8000/api/v1/user/login",{
+      const {data} = await axios.post("https://jealous-newt-tank-top.cyclic.app/api/v1/user/login",{
         
         email : input.email,
         password : input.password

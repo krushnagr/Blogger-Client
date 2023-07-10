@@ -10,7 +10,7 @@ const Blogs = () => {
   }, []);
   const getAllBlogs = async () => {
     try {
-      const { data } = await axios.get("/api/v1/blog/all-blog");
+      const { data } = await axios.get("https://jealous-newt-tank-top.cyclic.app/api/v1/blog/all-blog");
       if (data?.success) {
         setBlogs(data.blog);
         // console.log(data.blog)

@@ -21,7 +21,7 @@ const Register = () => {
   const handelSbmit = async (e)=>{
     e.preventDefault();
     try{
-      const {data} = await axios.post("http://localhost:8000/api/v1/user/signup",{
+      const {data} = await axios.post("https://jealous-newt-tank-top.cyclic.app/api/v1/user/signup",{
         username : input.name,
         email : input.email,
         password : input.password

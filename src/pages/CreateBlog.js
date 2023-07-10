@@ -16,7 +16,7 @@ const CreateBlog = () => {
         e.preventDefault();
         try{
             console.log(input);
-            const {data} = await axios.post('http://localhost:8000/api/v1/blog/create-blog',{
+            const {data} = await axios.post('https://jealous-newt-tank-top.cyclic.app/api/v1/blog/create-blog',{
                 title : input.title,
                 descripation : input.description,
                 image : input.image,

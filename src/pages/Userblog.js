@@ -7,7 +7,7 @@ const Userblog = () => {
     const getUserBlog = async ()=>{
         try{
             const id = localStorage.getItem('userId')
-            const {data} = await axios.get(`/api/v1/blog/user-blog/${id}`)
+            const {data} = await axios.get(`https://jealous-newt-tank-top.cyclic.app/api/v1/blog/user-blog/${id}`)
             if(data?.success){
                 setBlogs(data.userblog.blogs);
                 console.log(blogs);
